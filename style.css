@@ -1,0 +1,186 @@
+/* Colors */
+:root {
+  --primary-color: #ff5a5f;
+  --secondary-color: #008489;
+  --text-color: #484848;
+  --bg-color: #ff9b30;
+}
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1.6rem;
+}
+
+p {
+  margin-bottom: 1.6rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Container */
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Cards */
+.card-white {
+  background-color: rgb(231, 231, 235);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+#introduction {
+  text-align: center;
+}
+
+.img-circle {
+  border-radius: 50%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.blue-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 2rem;
+}
+
+.blue-button:hover {
+  background-color: #cc4c4f;
+}
+
+
+/* Interests */
+#interests {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.interest {
+  text-align: center;
+}
+
+.fa-3x {
+  font-size: 6rem;
+  color: var(--primary-color);
+  margin-bottom: 1.6rem;
+}
+
+/* Social Media */
+#social-media {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media-icons i {
+  margin-right: 5rem;
+}
+
+.blue-grey {
+  color: #ff5a5f;
+  transition: color 0.3s ease;
+}
+
+.blue-grey:hover {
+  color: var(--primary-color);
+}
+
+/* Contact Me */
+#contact-me {
+  text-align: center;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+label {
+  display: block;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.4rem;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+  outline: none;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  input[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #cc4c4f;
+  }
